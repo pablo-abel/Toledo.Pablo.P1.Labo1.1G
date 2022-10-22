@@ -34,6 +34,26 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="marca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="marca.h" />
+		<Unit filename="notebook.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="notebook.h" />
+		<Unit filename="servicio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="servicio.h" />
+		<Unit filename="tipo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipo.h" />
+		<Unit filename="trabajo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="trabajo.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
