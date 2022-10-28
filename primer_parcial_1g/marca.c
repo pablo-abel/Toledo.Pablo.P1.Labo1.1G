@@ -27,15 +27,19 @@ int cargarNombreMarca(eMarca marcas[], int tam, int idMarca, char descripcion[])
     }
     return todoOk;
 }
-int mostrarMarca(eMarca marcas[], int tam)
+int mostrarMarca(eMarca marcas[], int tam, int clear)
 {
     int todoOk = 0;
     if(marcas != NULL && tam > 0)
     {
+        if(clear)
+        {
+            system("cls");
+        }
         printf("========================\n");
-        printf("   *** lista Marca ***   \n");
+        printf("   *** lista Marca ***  \n");
         printf("========================\n");
-        printf("    id      Descripcion \n");
+        printf("   id       Descripcion \n");
         printf("========================\n");
         for (int i = 0; i < tam; i++)
         {

@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "servicio.h"
-#include "notebook.h"
 
 int cargarNombreServicios(eServicio servicios[], int tam, int idServicios, char descripcion[])
 {
     int todoOk = 0;
     int flag = 1;
-    if(servicios != NULL && tam > 0)
+    if(servicios != NULL && tam > 0 && descripcion != NULL)
     {
         todoOk = 1;
         for(int i = 0; i < tam; i ++)
@@ -27,21 +26,26 @@ int cargarNombreServicios(eServicio servicios[], int tam, int idServicios, char 
     }
     return todoOk;
 }
-int mostrarServicios(eServicio servicios[], int tam)
+
+int mostrarServicios(eServicio servicios[], int tam, int clear)
 {
     int todoOk = 0;
     if(servicios != NULL && tam > 0)
     {
-        printf("=================================\n");
-        printf("     *** lista de servicios *** \n");
-        printf("=================================\n");
-        printf("    id      Descripcion   precio\n");
-        printf("=================================\n");
+        if(clear)
+        {
+            system("cls");
+        }
+        printf("===================================\n");
+        printf("     *** lista de servicios ***   \n");
+        printf("===================================\n");
+        printf("   id      Descripcion      precio\n");
+        printf("===================================\n");
         for (int i = 0; i < tam; i++)
         {
-             printf("  %d       %10s      %.2f  \n", servicios[i].id, servicios[i].descripcion, servicios[i].precio);
+             printf("  %d     %-7s     %10.2f  \n", servicios[i].id, servicios[i].descripcion, servicios[i].precio);
         }
-        printf("========================\n");
+        printf("===================================\n");
         printf("\n");
         todoOk = 1;
     }

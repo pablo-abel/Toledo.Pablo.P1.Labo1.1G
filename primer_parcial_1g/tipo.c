@@ -27,11 +27,15 @@ int cargarNombreTipo(eTipo tipos[], int tam, int idTipos, char descripcion[])
     }
     return todoOk;
 }
-int mostrarTipos(eTipo tipos[], int tam)
+int mostrarTipos(eTipo tipos[], int tam, int clear)
 {
     int todoOk = 0;
     if(tipos != NULL && tam > 0)
     {
+        if(clear)
+        {
+            system("cls");
+        }
         printf("========================\n");
         printf(" *** lista de tipos *** \n");
         printf("========================\n");
