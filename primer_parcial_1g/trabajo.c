@@ -39,14 +39,14 @@ int buscarLibreTrabajo(int* pIndice, eTrabajo trabajos[], int tamt)
 }
 
 int altaTrabajo(eTrabajo trabajos[], int tamt, eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamti,
-                eServicio servicios[], int tams, int* pIdTrabajo)
+                eServicio servicios[], int tams, eCliente clientes[],int tamc, int* pIdTrabajo)
 {
     int todoOk = 0;
     int indice;
     eTrabajo auxTrabajo;
 
     if (trabajos != NULL && tamt > 0 && notebooks != NULL && tam > 0 && marcas != NULL && tama > 0 && tipos != NULL && tamti > 0 &&
-        servicios != NULL && tams > 0 && pIdTrabajo != NULL)
+        servicios != NULL && tams > 0 && clientes != NULL && tamc > 0 && pIdTrabajo != NULL)
     {
         system("cls");
         printf("\n       Alta Trabajo     \n");
@@ -73,7 +73,7 @@ int altaTrabajo(eTrabajo trabajos[], int tamt, eNotebook notebooks[], int tam, e
                 scanf("%d", &auxTrabajo.idServicio);
             }
 
-            mostrarNotebooks(notebooks, tam, marcas, tama, tipos, tamti, 0);
+            mostrarNotebooks(notebooks, tam, marcas, tama, tipos, tamti, clientes, tamc, 0);
             printf("Ingrese ID de la notebook: ");
             scanf("%d", &auxTrabajo.idNotebook);
             while(validarNotebookId(notebooks, tam, auxTrabajo.idNotebook) == -1)
@@ -128,7 +128,7 @@ int mostrarTrabajos(eTrabajo trabajos[], int tamt, eNotebook notebooks[], int ta
         printf("===============================================\n");
         for (int i = 0; i < tamt; i++)
         {
-            if (trabajos[i].isEmpty == 0)
+            if (!trabajos[i].isEmpty)
             {
                 mostrarTrabajo(trabajos[i], servicios, tams, notebooks, tam);
                 flag = 0;

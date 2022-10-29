@@ -6,13 +6,14 @@
 	"marca.h"
 	"notebook.h"
 
-1666743791 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\marca.h
+1666830706 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\marca.h
 
-1666775413 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\notebook.h
+1666998765 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\notebook.h
 	"marca.h"
 	"tipo.h"
+	"cliente.h"
 
-1666743817 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\tipo.h
+1666830502 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\tipo.h
 
 1666743705 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\tipo.c
 	<stdio.h>
@@ -21,7 +22,7 @@
 	"tipo.h"
 	"notebook.h"
 
-1666780342 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\main.c
+1667002170 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -30,14 +31,15 @@
 	"marca.h"
 	"tipo.h"
 	"servicio.h"
+	"cliente.h"
 
-1666779046 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\trabajo.h
+1666998628 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\trabajo.h
 	"notebook.h"
 	"servicio.h"
 
-1666743844 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\servicio.h
+1666830694 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\servicio.h
 
-1666777878 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\trabajo.c
+1666998599 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\trabajo.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -51,7 +53,7 @@
 	<string.h>
 	"servicio.h"
 
-1666777441 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\notebook.c
+1667001007 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\notebook.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -60,4 +62,14 @@
 	"marca.h"
 	"tipo.h"
 	"servicio.h"
+	"cliente.h"
+
+1666993864 source:c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cliente.h"
+	"notebook.h"
+
+1666994015 c:\users\pc\desktop\practica-curso-ingreso\toledo.pablo.p1.labo1.1g\primer_parcial_1g\cliente.h
 

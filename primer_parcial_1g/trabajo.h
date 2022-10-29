@@ -57,7 +57,7 @@ int buscarLibreTrabajo(int* pIndice, eTrabajo trabajos[], int tamt);
  *
  */
 int altaTrabajo(eTrabajo trabajos[], int tamt, eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamti,
-                eServicio servicios[], int tams, int* pIdTrabajo);
+                eServicio servicios[], int tams, eCliente clientes[],int tamc, int* pIdTrabajo);
 
 /** \brief muestro trabajo
  *

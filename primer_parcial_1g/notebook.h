@@ -1,5 +1,6 @@
 #include "marca.h"
 #include "tipo.h"
+#include "cliente.h"
 #ifndef NOTEBOOK_H_INCLUDED
 #define NOTEBOOK_H_INCLUDED
 
@@ -9,6 +10,7 @@ typedef struct
     char modelo[20];
     int idMarca;
     int idTipo;
+    int idCliente;
     float precio;
     int isEmpty;
 } eNotebook;
@@ -22,6 +24,13 @@ typedef struct
  *
  */
 int menu();
+
+/** \brief menu de informe
+ *
+ * \return int retorna la opcion ingresada
+ *
+ */
+int menuInformes();
 
 /** \brief incializo isEmpty en 1
  *
@@ -74,7 +83,7 @@ int buscarNotebook(eNotebook notebooks[], int tam, int* pIndice, int id);
  * \return void
  *
  */
-void mostrarNotebook(eNotebook unaNotebook, eMarca marcas[], int tam,  eTipo tipos[], int tamt);
+void mostrarNotebook(eNotebook unaNotebook, eMarca marcas[], int tam,  eTipo tipos[], int tamt, eCliente clientes[], int tamc);
 
 /** \brief muestro la lista de Notebooks
  *
@@ -88,7 +97,7 @@ void mostrarNotebook(eNotebook unaNotebook, eMarca marcas[], int tam,  eTipo tip
  * \return int 1 si esta todo ok 0 si hubo problema en la validacion
  *
  */
-int mostrarNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, int clear);
+int mostrarNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc, int clear);
 
 /** \brief ordena la lista de notebooks
  *
@@ -111,7 +120,7 @@ int ordenarNotebook(eNotebook notebooks[], int tam);
  * \return int 1 si esta todo ok 0 si hubo problema en la validacion
  *
  */
-int altaNotebook(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, int* pId);
+int altaNotebook(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc, int* pId);
 
 /** \brief genera la baja de una notebook
  *
@@ -124,7 +133,7 @@ int altaNotebook(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTip
  * \return int 1 si esta todo ok 0 si hubo problema en la validacion
  *
  */
-int bajaNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt);
+int bajaNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
 
 /** \brief  menu de opciones modificar
  *
@@ -144,7 +153,7 @@ int menuModificacion();
  * \return int 1 si esta todo ok 0 si hubo problema en la validacion
  *
  */
-int modificarNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt);
+int modificarNotebooks(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
 
 /** \brief valida que el ID exista en la estructura
  *
@@ -166,3 +175,19 @@ int validarNotebookId(eNotebook notebooks[], int tam, int id);
  *
  */
 int cargarModeloNotebook(eNotebook notebooks[], int tam, int idNotebook, char modelo[]);
+
+int mostrarNoteboksIdTipos(int idTipo, eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
+
+int mostrarNotebooksTipos(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
+
+int mostrarNoteboksIdMarcas(int idMarca, eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
+
+int mostrarNotebooksMarcas(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
+
+int mostrarNotebooksMasBaratas(eNotebook notebooks[], int tam);
+
+int mostrarListaPorMarca(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt, eCliente clientes[], int tamc);
+
+int mostrarCanNotebookTipoMarca(eNotebook notebooks[], int tam, eMarca marcas[], int tama, eTipo tipos[], int tamt);
+
+int mostrarMarcasMasElegidas(eNotebook notebooks[], int tam, eMarca marcas[], int tama);
